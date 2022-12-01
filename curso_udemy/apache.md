@@ -11,10 +11,11 @@
 ```
 sudo apt-get install apache2
 ```
+>**Nota** - Se der erro, rode o comando sudo apt-get update, para atualizar a distro, em seguida tente de novo.
 
 ### Iniciando o servidor
 ```
-sudo service acpahe2 start
+sudo service apache2 start
 ```
 ### Atribuir à um domínio
   Só poderá ser acessado na própria máquina
@@ -25,12 +26,12 @@ sudo service acpahe2 start
   - Cole o seguinte código, em seguida, salve o arquivo:
     ```
     NameVirtualHost {nome_do_domínio.com}
-    <VirtualHost {nome_do_domínio.com}>
-    DocumentRoot /var/www/{nome_do_domínio.com}
-    ServerName {nome_do_domínio.com}
-    ServerAdmin admin@{nome_do_domínio.com}
-    ErrorLog {nome_do_domínio.com}-error.log
-    CustomLog {nome_do_domínio.com}_acess-log commom
+      <VirtualHost {nome_do_domínio.com}>
+      DocumentRoot /var/www/{nome_do_domínio.com}
+      ServerName {nome_do_domínio.com}
+      ServerAdmin admin@{nome_do_domínio.com}
+      ErrorLog {nome_do_domínio.com}-error.log
+      CustomLog {nome_do_domínio.com}_acess-log commom
     </VirtualHost>
     ```
     > **Nota** - Remover também as chaves { }
