@@ -228,7 +228,7 @@ sudo cp -Rfa /etc/squid/squid.conf{,.bkp}
     - Vá em configurações, e pesquise por Proxy.
     - Configure, conforme a imagem abaixo.
     
-      <img src="proxy.png" width="500" >
+      <img src="./images/proxy.png" width="500" >
     - Feito isso, configurado
 
 # Possibilidades com o SQUID
