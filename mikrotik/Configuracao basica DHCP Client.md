@@ -20,7 +20,7 @@ porta-lan
 > A essa altura o seu PC irá receber um endereço IP, mas não vai funcionar a internet pois não tem uma regra de NAT, você pode conferir os ips que foram distribuidos em DCHP Server > Leases
 > 
 
-Comando para zerar e renovar IP do PC:
+Comando para zerar e renovar IP do PC (cmd):
 
 ```powershell
 ipconfig /release
